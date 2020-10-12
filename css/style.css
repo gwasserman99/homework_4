@@ -114,7 +114,7 @@ header p{
 
 .about, .method, .clients, .contact{
   /*Your Code Here*/
-  grid-column-start: 2;
+  grid-column: 2 / span 1;
   overflow: hidden;
 }
 
@@ -122,28 +122,29 @@ header p{
   /*Your Code Here*/
   grid-column: 1 / -1;
   max-height: 700 px;
+  overflow: hidden;
 }
 
 .about, .about-image{
    /*Your Code Here*/
-  grid-row-start: 2;
+  grid-row: 2 / auto;
 }
 
 .method, .method-image{
    /*Your Code Here*/
-   grid-row-start: 3;
+   grid-row: 3 / auto;
 }
 
 
 .clients, .clients-image{
     /*Your Code Here*/
-    grid-row-start: 4;
+    grid-row: 4 / auto;
 }
 
 
 .contact, .contact-image{
     /*Your Code Here*/
-    grid-row-start: 5;
+    grid-row: 5 / auto;
 }
 
 .text-block{
@@ -152,6 +153,7 @@ header p{
   padding: 30px;
   /*Your code here:*/
   vertical-align: middle;
+  margin: auto;
 }
 
 
@@ -170,16 +172,15 @@ header p{
     grid-template-rows: 400px 400px 400px 400px 400px;
   }
 
-  .about, .clients, .method-image, .contact-image{
+  .about, .clients, .method-image, .contact{
     /*Your code here:*/
-    grid-column-start: 3;
-    grid-column-end: 5;   
+    grid-column: 3 / 5;
+
   }
 
   .about-image, .clients-image, .method, .contact{
     /*Your code here:*/
-    grid-column-start: 2;
-    grid-column-end: 4;
+    grid-column: 2 / 4;
   }
 }
 
