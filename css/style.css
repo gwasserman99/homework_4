@@ -49,13 +49,15 @@ nav a:hover{
   z-index: 1;
 
   /*Your code here*/
+  position: absolute;
+  top: -40px
 }
 
 /*Your Code Here*/
 /*Write selector/rule property to position the skip class element*/
 
 .skip:focus{
-  position: relative;
+  top: 0px
 }
 
 
@@ -84,9 +86,9 @@ footer{
 .container{
   /*Your Code Here*/
   display: grid;
+  grid-row-gap: 15px;
   grid-template-columns: 1fr 5fr 1fr;
   grid-template-rows: auto auto auto auto auto;
-  grid-row-gap: 15px;
 }
 
 header{
@@ -115,12 +117,12 @@ header p{
 .about, .method, .clients, .contact{
   /*Your Code Here*/
   grid-column: 2 / span 1;
-  overflow: hidden;
+  
 }
 
 .about-image, .method-image, .clients-image, .contact-image{
   /*Your Code Here*/
-  grid-column: 1 / -1;
+  grid-column: 1 / span 3;
   max-height: 700 px;
   overflow: hidden;
 }
@@ -167,12 +169,11 @@ header p{
 
   .container{
     /*Your code here:*/
-    display: grid;
     grid-template-columns: 50px auto 500px auto 50px;
     grid-template-rows: 400px 400px 400px 400px 400px;
   }
 
-  .about, .clients, .method-image, .contact{
+  .about, .clients, .method-image, .contact-image{
     /*Your code here:*/
     grid-column: 3 / 5;
 
